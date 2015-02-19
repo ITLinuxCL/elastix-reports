@@ -52,7 +52,7 @@ class Report
     end
     
     Mail.deliver do 
-        to [EMAIL_TO, 'pbruna@itlinux.cl']
+        to [EMAIL_TO]
         from EMAIL_FROM
         subject "Llamadas sin contestar de hoy #{Date.today.to_s}"
         html_part do
